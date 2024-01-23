@@ -33,6 +33,7 @@ fog_sun_scatter = 0.18
 fog_density = 0.0732
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_qoyj7"]
+size = Vector3(25, 1, 25)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8eqbs"]
 albedo_texture = ExtResource("1_tk867")
@@ -41,6 +42,7 @@ albedo_texture = ExtResource("1_tk867")
 size = Vector3(25, 1, 25)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_jijte"]
+size = Vector3(5, 5, 5)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7rxxn"]
 albedo_texture = ExtResource("2_mylb0")
@@ -49,6 +51,7 @@ albedo_texture = ExtResource("2_mylb0")
 size = Vector3(5, 5, 5)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_qt1ef"]
+size = Vector3(2, 2, 2)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_iidm5"]
 albedo_texture = ExtResource("3_l4s61")
@@ -57,6 +60,7 @@ albedo_texture = ExtResource("3_l4s61")
 size = Vector3(2, 2, 2)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_pftkp"]
+size = Vector3(3, 3, 3)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ubnyc"]
 albedo_texture = ExtResource("4_hupit")
@@ -84,34 +88,34 @@ material_override = SubResource("StandardMaterial3D_8eqbs")
 mesh = SubResource("BoxMesh_q0j8j")
 
 [node name="StaticBody3D2" type="StaticBody3D" parent="WorldEnvironment"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 3, -6.819)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="WorldEnvironment/StaticBody3D2"]
 shape = SubResource("BoxShape3D_jijte")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="WorldEnvironment/StaticBody3D2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 3, -6.819)
 material_override = SubResource("StandardMaterial3D_7rxxn")
 mesh = SubResource("BoxMesh_wkfmb")
 
 [node name="StaticBody3D3" type="StaticBody3D" parent="WorldEnvironment"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.499, 1.5, 7.629)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="WorldEnvironment/StaticBody3D3"]
 shape = SubResource("BoxShape3D_qt1ef")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="WorldEnvironment/StaticBody3D3"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.499, 1.5, 7.629)
 material_override = SubResource("StandardMaterial3D_iidm5")
 mesh = SubResource("BoxMesh_pg1ra")
 
 [node name="StaticBody3D4" type="StaticBody3D" parent="WorldEnvironment"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.03, 2, 7.737)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="WorldEnvironment/StaticBody3D4"]
 shape = SubResource("BoxShape3D_pftkp")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="WorldEnvironment/StaticBody3D4"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.03, 2, 7.737)
 material_override = SubResource("StandardMaterial3D_ubnyc")
 mesh = SubResource("BoxMesh_ofyrs")
 
 [node name="PlayerScene" parent="." instance=ExtResource("5_qwjbw")]
-transform = Transform3D(0.271524, 0, -0.962432, 0, 1, 0, 0.962432, 0, 0.271524, 7, 1.5, -5)
+transform = Transform3D(-0.385213, 0, 0.922828, 0, 1, 0, -0.922828, 0, -0.385213, 7, 1.5, -5)
